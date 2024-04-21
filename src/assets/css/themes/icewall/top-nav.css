@@ -14,7 +14,7 @@
     }
     .wrapper {
         &:before {
-            display:none;
+            /* display:none; */
             animation: 0.4s intro-wrapper ease-in-out 0.1s;
             animation-fill-mode: forwards;
         }

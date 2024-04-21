@@ -1,8 +1,8 @@
 @layer components {
   .box {
-    background-image:url(./bgBox.png);
-    background-size:cover;
-    background-repeat:no-repeat;
+    /* background-image:url(./bgBox.png); */
+    /* background-size:cover; */
+    /* background-repeat:no-repeat; */
     box-shadow: 0px 3px 5px #0000000b;
     background-color: white;
     border: 1px solid theme("colors.slate.200");
