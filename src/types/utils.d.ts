@@ -34,3 +34,20 @@ type DotNestedKeys<T> = (
 ) extends infer D
   ? Extract<D, string>
   : never;
+
+type PatientListData = {
+  id:string
+  patientName:string
+  memberId:string
+  age:string
+  sex:string
+  weight:string
+  enrollDate:string
+  lastFollowUp:string
+  status:string
+  heartRate:string
+  bloodPressure:string
+  temperature:string
+  respirationRate:string
+  SPO2:string
+}
