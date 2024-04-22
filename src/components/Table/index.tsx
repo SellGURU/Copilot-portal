@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DataGrid, GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridValueGetterParams, } from '@mui/x-data-grid';
 import { publish, subscribe } from '@/utils/event';
 
 const columns: GridColDef[] = [
@@ -49,10 +49,10 @@ export default function DataTable(props:DataTableProps) {
     { field: 'sex', headerName: 'Sex', width: resolveWith(1),align:'center',headerAlign:'center' },
     { field: 'weight', headerName: 'Weight', width: resolveWith(2),align:'center',headerAlign:'center' },
     { field: 'enrollDate', headerName: 'Enroll Date', width: resolveWith(6),align:'center',headerAlign:'center' },
-    { field: 'lastFollowUp', headerName: 'Last Follow-up', width: resolveWith(6),align:'center',headerAlign:'center' },
+    { field: 'lastFollowUp', headerName: 'Last Follow-up', width: resolveWith(5),align:'center',headerAlign:'center' },
     { field: 'status', headerName: 'Status', width: resolveWith(4),align:'center',headerAlign:'center' },
     { field: 'heartRate', headerName: 'Heart Rate', width: resolveWith(3),align:'center',headerAlign:'center' },
-    { field: 'bloodPressure', headerName: 'Blood Pressure', width: resolveWith(7),align:'center',headerAlign:'center' },
+    { field: 'bloodPressure', headerName: 'Blood Pressure', width: resolveWith(6),align:'center',headerAlign:'center' },
     { field: 'temperature', headerName: 'Temperature', width: resolveWith(3),align:'center',headerAlign:'center' },
     { field: 'respirationRate', headerName: 'Respiration Rate', width: resolveWith(6),align:'center',headerAlign:'center' },
     { field: 'SPO2', headerName: 'SPO2', width: resolveWith(3),align:'center',headerAlign:'center' }
@@ -69,6 +69,9 @@ export default function DataTable(props:DataTableProps) {
       <DataGrid
         rows={rows}
         columns={ patientColums }
+        sx={{
+          border: 0,
+        }}
         // getCellClassName={}
         initialState={{
           pagination: {
@@ -80,7 +83,8 @@ export default function DataTable(props:DataTableProps) {
         
         pageSizeOptions={[]}
         // checkboxSelection
-      ></DataGrid>
+      >
+      </DataGrid>
     </div>
   );
 }
