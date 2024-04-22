@@ -5,6 +5,14 @@ const menu: Array<Menu | "divider"> = [
     icon: "Home",
     pathname: "/",
     title: "Patient List",
+    subMenu: [
+      {
+        icon: "Activity",
+        pathname: "/patientlist-overview",
+        title: "Overview",
+      },
+      
+    ]
   },
   {
     icon: "Home",

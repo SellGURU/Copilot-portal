@@ -71,6 +71,7 @@ import ImageZoom from "../pages/ImageZoom";
 
 import Layout from "../themes";
 import PatientList from "../pages/PatientList"
+import PatientListOverview from "../pages/PatientListOverview"
 
 function Router() {
   const routes = [
@@ -82,6 +83,10 @@ function Router() {
           path: "/",
           // element: <DashboardOverview1 />,
           element: <PatientList />,
+        },
+        {
+          path: "patientlist-overview",
+          element: <PatientListOverview />,
         },
         {
           path: "dashboard-overview-2",
