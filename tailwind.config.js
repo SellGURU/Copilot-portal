@@ -22,9 +22,12 @@ module.exports = {
         secondary: "rgb(var(--color-secondary) / <alpha-value>)",
         success: "#05B37F",
         info: "rgb(var(--color-info) / <alpha-value>)",
-        warning: "#FF9914",
         pending: "rgb(var(--color-pending) / <alpha-value>)",
-        danger: "#FF4869",
+        danger: "#FF4869", //Priorities - red
+        green: "#06C78D", //Low - green
+        warning: "#FF9914", //High - orange
+        lightWarning:"#FFF5E7", //light orange
+        purple: "#3730A1", //Medium - purple
         light: "rgb(var(--color-light) / <alpha-value>)",
         dark: "rgb(var(--color-dark) / <alpha-value>)",
         darkText:"#6783A0",
