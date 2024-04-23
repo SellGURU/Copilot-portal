@@ -1,7 +1,7 @@
 const Main:React.FC = () => {
     return (
         <>
-            <div className="w-full h-[72px] dark:bg-darkmode-400 boxShadow rounded-lg mt-10 px-4 py-2 flex items-center justify-start gap-6">
+            <div className="w-full h-[72px] relative z-20 dark:bg-darkmode-400 boxShadow rounded-lg mt-10 px-4 py-2 flex items-center justify-start gap-6">
             <img src="./arrow-left.svg" className="w-6 h-6" />
             <div className="flex gap-4">
                 <img src="./userPic.svg" className="w-14 h-14 rounded-full" />
