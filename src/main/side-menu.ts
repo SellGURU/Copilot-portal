@@ -11,7 +11,11 @@ const menu: Array<Menu | "divider"> = [
         pathname: "/patientlist-overview",
         title: "Overview",
       },
-      
+      {
+        icon: "Activity",
+        pathname: "/patientlist-timeLine",
+        title: "Timeline",
+      },      
     ]
   },
   {
