@@ -19,6 +19,7 @@ import SimpleLineChart1 from "@/components/SimpleLineChart1";
 import LeafletMap from "@/components/LeafletMap";
 import { Menu } from "@/components/Base/Headless";
 import Table from "@/components/Base/Table";
+import { ProfileCard } from "@/components/CustomComponents";
 
 function Main() {
   const [salesReportFilter, setSalesReportFilter] = useState<string>();
@@ -33,7 +34,7 @@ function Main() {
   return (
     <div className="grid grid-cols-12 gap-6">
       <div className="col-span-12 2xl:col-span-12 gap-4">
-        <div className="w-full h-[72px] boxShadow rounded-lg mt-10 px-4 py-2 flex items-center justify-start gap-6">
+        {/* <div className="w-full h-[72px] boxShadow rounded-lg mt-10 px-4 py-2 flex items-center justify-start gap-6">
           <img src="./arrow-left.svg" className="w-6 h-6" />
           <div className="flex gap-4">
             <img src="./userPic.svg" className="w-14 h-14 rounded-full" />
@@ -48,10 +49,11 @@ function Main() {
             <p className="text-xs	text-[#7B93AF]">1. High Blood Pressure</p>
             <p className="text-xs	text-[#7B93AF]">2. Asthma</p>
           </div>
-        </div>
+        </div> */}
+        <ProfileCard></ProfileCard>  
         <div className="grid grid-cols-5 grid-rows-12 h-[800px] gap-x-3 gap-y-4 my-4">
           {/* Risks cad */}
-          <div className="boxShadow rounded-[18px] row-span-9 overflow-hidden">
+          <div className="boxShadow dark:bg-darkmode-400 rounded-[18px] row-span-9 overflow-hidden">
             <p className="text-sm	font-medium	mx-4 my-3">Risks</p>
 
             <div className="border-b border-[#E2E8F0] w-full"></div>
@@ -129,7 +131,7 @@ function Main() {
             </div>
           </div>
           {/* Biomarkers cad */}
-          <div className="boxShadow rounded-[18px] row-span-9 overflow-hidden">
+          <div className="boxShadow rounded-[18px] row-span-9 dark:bg-darkmode-400 overflow-hidden">
             <p className="text-sm	font-medium	mx-4 my-3">Biomarkers</p>
 
             <div className="border-b border-[#E2E8F0] w-full"></div>
@@ -367,7 +369,7 @@ function Main() {
             </div>
           </div>
           {/* Interventions cad */}
-          <div className="boxShadow rounded-[18px] row-span-9 overflow-hidden">
+          <div className="boxShadow rounded-[18px] dark:bg-darkmode-400 row-span-9 overflow-hidden">
             <p className="text-sm	font-medium	mx-4 my-3">Interventions</p>
 
             <div className="border-b border-[#E2E8F0] w-full"></div>
@@ -544,7 +546,7 @@ function Main() {
           </div>
 
           {/* Summary Impact cad */}
-          <div className="boxShadow rounded-[18px] col-span-2 row-span-12 overflow-hidden">
+          <div className="boxShadow rounded-[18px] dark:bg-darkmode-400 col-span-2 row-span-12 overflow-hidden">
             <div className="flex items-center justify-between">
               <p className="text-sm	font-medium	mx-4 my-3">Summary Impact</p>
               <div className="grid grid-cols-2 grid-rows-2 gap-x-4 me-4 mt-[10px] mb-1">
@@ -684,7 +686,7 @@ function Main() {
           </div>
 
           {/* Recently Alerts cad */}
-          <div className="boxShadow rounded-lg col-span-3 row-span-3 px-4 py-3 overflow-hidden">
+          <div className="boxShadow rounded-lg dark:bg-darkmode-400 col-span-3 row-span-3 px-4 py-3 overflow-hidden">
             <div className="flex items-center justify-between mb-3">
               <div className="text-sm	font-medium gap-2 flex items-center">
                 Recently Alerts

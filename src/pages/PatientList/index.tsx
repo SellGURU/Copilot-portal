@@ -200,7 +200,7 @@ function Main() {
         </div>
       </div>
 
-      <div className="col-span-12 bg-white pt-6 px-4 rounded-[8px]">
+      <div className="col-span-12 bg-white dark:bg-darkmode-400 pt-6 px-4 rounded-[8px]">
         <DataTable applyData={() => [
           {
             id:"1",
