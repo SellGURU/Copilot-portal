@@ -73,6 +73,14 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .bg-Rainbow{
+    background-image: url("./bg-Rainbow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background: linear-gradient(90deg, #B5D4F1 0%, #81E6DB 37.77%, #E8D284 70.4%, #E2798E 100%); */
+
+  }
   
 }
 @layer components {

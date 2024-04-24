@@ -12,7 +12,7 @@ import Lucide from "@/components/Base/Lucide";
 import Tippy from "@/components/Base/Tippy";
 import Litepicker from "@/components/Base/Litepicker";
 import ReportDonutChart from "@/components/ReportDonutChart";
-import ReportLineChart from "@/components/ReportLineChart";
+import ReportLineChart2 from "@/components/ReportLineChart2";
 import ReportPieChart from "@/components/ReportPieChart";
 import ReportDonutChart1 from "@/components/ReportDonutChart1";
 import SimpleLineChart1 from "@/components/SimpleLineChart1";
@@ -62,10 +62,36 @@ function Main() {
                 <p className="text-[#6783A0] text-xs text-justify">
                   Risk of diabetes in the next 5 years is 73% by current trend{" "}
                 </p>
-                <img src="./Group1.svg" />
+                <div>
+                  <div className="flex items-center justify-end w-full">
+                    <div className="w-8 h-4 rounded-lg bg-[#FFF2ED] flex items-center justify-center">
+                      <p className="font-medium	text-[10px] text-[#FA824C]">
+                        73
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[73%] h-full">
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
+                    <p>Low</p>
+                    <p>High</p>
+                  </div>
+                </div>
+
+                {/* <img src="./Group1.svg" /> */}
                 <div>
                   <p className="text-[#57728E] text-xs	">Indicator</p>
-                  <img src="./Group2.svg" />
+                  <p className="font-normal text-[8px] text-[#253343] text-center mt-2">
+                    Glucose Trend
+                    <span className="font-light text-[#6783A0]">
+                      (mg/dl)
+                    </span>
+                  </p>
+                  <ReportLineChart2 height={132}/>
+                  
                 </div>
               </div>
 
@@ -74,10 +100,30 @@ function Main() {
                 <p className="text-[#6783A0] text-xs text-justify">
                   The risk is above the average in the patient’s age group.
                 </p>
-                <img src="./Group1.svg" />
                 <div>
+                  <div className="flex items-center justify-end w-full">
+                    <div className="w-8 h-4 rounded-lg bg-[#FFF2ED] flex items-center justify-center">
+                      <p className="font-medium	text-[10px] text-[#FA824C]">
+                        73
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[73%] h-full">
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
+                    <p>Low</p>
+                    <p>High</p>
+                  </div>
+                </div>
+                <div className="mb-5">
                   <p className="text-[#57728E] text-xs	">Indicator</p>
-                  <img src="./Group2.svg" />
+                  <p className="font-normal text-[8px] text-[#253343] text-center mt-2">
+                    Heart Disease
+                  </p>
+                  <ReportLineChart2 height={132}/>
                 </div>
               </div>
             </div>
@@ -101,7 +147,10 @@ function Main() {
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[90%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -117,7 +166,10 @@ function Main() {
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[70%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -131,7 +183,10 @@ function Main() {
                       <p className="font-medium	text-[10px] text-green">37</p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[40%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -141,13 +196,16 @@ function Main() {
                 <div>
                   <div className="flex items-center justify-between w-full">
                     <p className="text-[#6783A0] text-xs">Pace of aging</p>
-                    <div className="w-[54px] h-4 rounded-lg bg-lightWarning flex items-center justify-center">
-                      <p className="font-medium	text-[10px] text-[#FFB85A]">
-                        110%
+                    <div className=" h-4 rounded-lg bg-lightWarning flex items-center justify-center text-nowrap">
+                      <p className="font-medium	text-[10px] text-[#FFB85A] mx-2">
+                        110% <TrendingUpIcon fontSize="small"/>
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[65%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -167,7 +225,10 @@ function Main() {
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[30%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -183,7 +244,10 @@ function Main() {
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[20%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -197,7 +261,10 @@ function Main() {
                       <p className="font-medium	text-[10px] text-green">37</p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[60%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -207,13 +274,16 @@ function Main() {
                 <div>
                   <div className="flex items-center justify-between w-full">
                     <p className="text-[#6783A0] text-xs">Cellular</p>
-                    <div className="w-[54px] h-4 rounded-lg bg-lightWarning flex items-center justify-center">
-                      <p className="font-medium	text-[10px] text-[#FFB85A]">
-                        110%
+                    <div className=" h-4 rounded-lg bg-lightWarning flex items-center justify-center text-nowrap">
+                      <p className="font-medium	text-[10px] text-[#FFB85A] mx-2">
+                        110% <TrendingUpIcon fontSize="small"/>
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[30%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -229,7 +299,10 @@ function Main() {
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[73%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -245,7 +318,10 @@ function Main() {
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[73%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -259,7 +335,10 @@ function Main() {
                       <p className="font-medium	text-[10px] text-green">37</p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[73%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
@@ -269,13 +348,16 @@ function Main() {
                 <div className="mb-10">
                   <div className="flex items-center justify-between w-full">
                     <p className="text-[#6783A0] text-xs">Cellular</p>
-                    <div className="w-[54px] h-4 rounded-lg bg-lightWarning flex items-center justify-center">
-                      <p className="font-medium	text-[10px] text-[#FFB85A]">
-                        110%
+                    <div className=" h-4 rounded-lg bg-lightWarning flex items-center justify-center text-nowrap">
+                      <p className="font-medium	text-[10px] text-[#FFB85A] mx-2">
+                        110% <TrendingUpIcon fontSize="small"/>
                       </p>
                     </div>
                   </div>
-                  <img src="./Group3.svg" className="mt-1" />
+                  <div className="bg-[#DDE0F1] rounded-xl shadow-sm overflow-hidden w-full h-[6px] mt-1 ">
+                    <div className="bg-Rainbow rounded-xl shadow-sm overflow-hidden w-[73%] h-full">
+                    </div>
+                  </div>
                   <div className="flex items-center justify-between w-full text-[8px] text-[#7B93AF]">
                     <p>Low</p>
                     <p>High</p>
