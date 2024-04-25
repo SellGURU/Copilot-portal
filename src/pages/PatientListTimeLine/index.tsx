@@ -30,6 +30,7 @@ function Main() {
   const nextImportantNotes = () => {
     importantNotesRef.current?.tns.goTo("next");
   };
+
   const [activities,setActivites] = useState([
     {
       date:'July 2nd, 2024',
