@@ -20,7 +20,7 @@ const menu: Array<Menu | "divider"> = [
   },
   {
     icon: "Home",
-    pathname: "",
+    pathname: "/copilot",
     title: "Medical Copilot",
   },
   {

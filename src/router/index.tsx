@@ -73,6 +73,7 @@ import Layout from "../themes";
 import PatientList from "../pages/PatientList"
 import PatientListOverview from "../pages/PatientListOverview"
 import PatientListTimeLine from "../pages/PatientListTimeLine"
+import MedicalCopilot from "@/pages/MedicalCopilot";
 
 function Router() {
   const routes = [
@@ -92,6 +93,10 @@ function Router() {
         {
           path:'patientlist-timeLine',
           element:<PatientListTimeLine></PatientListTimeLine>
+        },
+        {
+          path:'Copilot',
+          element:<MedicalCopilot></MedicalCopilot>
         },
         {
           path: "dashboard-overview-1",
