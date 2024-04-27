@@ -81,6 +81,12 @@
     /* background: linear-gradient(90deg, #B5D4F1 0%, #81E6DB 37.77%, #E8D284 70.4%, #E2798E 100%); */
 
   }
+  /* .mask-vectors {
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  } */
   
 }
 @layer components {

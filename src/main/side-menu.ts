@@ -10,12 +10,32 @@ const menu: Array<Menu | "divider"> = [
         icon: "Activity",
         pathname: "/patientlist-overview",
         title: "Overview",
+      },      
+      {
+        icon: "Activity",
+        pathname: "/patientlist-biomarkers",
+        title: "Biomarkers",
+      },
+      {
+        icon: "Activity",
+        pathname: "/patientlist-risks",
+        title: "Risks",
+      },
+      {
+        icon: "Activity",
+        pathname: "/patientlist-interventions",
+        title: "Interventions",
       },
       {
         icon: "Activity",
         pathname: "/patientlist-timeLine",
         title: "Timeline",
       },      
+      {
+        icon: "Activity",
+        pathname: "/patientlist-messages",
+        title: "Messages",
+      }, 
     ]
   },
   {

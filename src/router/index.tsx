@@ -72,7 +72,11 @@ import ImageZoom from "../pages/ImageZoom";
 import Layout from "../themes";
 import PatientList from "../pages/PatientList"
 import PatientListOverview from "../pages/PatientListOverview"
+import PatientListBiomarkers from "../pages/PatientListBiomarkers"
+import PatientListRisks from "../pages/PatientListRisks"
+import PatientListInterventions from "../pages/PatientListInterventions"
 import PatientListTimeLine from "../pages/PatientListTimeLine"
+import PatientListMessages from "../pages/PatientListMessages"
 import MedicalCopilot from "@/pages/MedicalCopilot";
 
 function Router() {
@@ -89,10 +93,26 @@ function Router() {
         {
           path: "patientlist-overview",
           element: <PatientListOverview />,
+        },        
+        {
+          path: "patientlist-biomarkers",
+          element: <PatientListBiomarkers />,
+        },
+        {
+          path: "patientlist-risks",
+          element: <PatientListRisks />,
+        },
+        {
+          path: "patientlist-interventions",
+          element: <PatientListInterventions />,
         },
         {
           path:'patientlist-timeLine',
           element:<PatientListTimeLine></PatientListTimeLine>
+        },
+        {
+          path:'patientlist-messages',
+          element:<PatientListMessages></PatientListMessages>
         },
         {
           path:'Copilot',

@@ -60,7 +60,17 @@ function Main() {
   return (
     <div className="grid grid-cols-12 gap-6">
       <div className="col-span-12 gap-4">
-        <ProfileCard></ProfileCard>  
+      <div className="flex items-center justify-between mt-10 mb-4 ">
+          <div className="w-1/2">
+            <ProfileCard></ProfileCard>  
+          </div>
+          <div className="flex justify-end items-center gap-2 text-white text-sm">
+            <div className="px-4 py-2 bg-[#3730A1] flex justify-center items-center gap-2 rounded-lg">
+              <img src="./filter-add.svg"  className="w-6 h-6"/>
+              Add Filter
+            </div>
+          </div>
+        </div>
       </div>
       <div className="grid col-span-12 grid-cols-12">
         <div className="col-span-4 mt-2">

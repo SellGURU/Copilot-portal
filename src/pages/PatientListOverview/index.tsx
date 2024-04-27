@@ -50,7 +50,9 @@ function Main() {
             <p className="text-xs	text-[#7B93AF]">2. Asthma</p>
           </div>
         </div> */}
-        <ProfileCard></ProfileCard>  
+        <div className="mt-10">
+          <ProfileCard></ProfileCard>  
+        </div>
         <div className="grid grid-cols-5 grid-rows-12 h-[800px] gap-x-3 gap-y-4 my-4">
           {/* Risks cad */}
           <div className="boxShadow dark:bg-darkmode-400 rounded-[18px] row-span-9 overflow-hidden">
